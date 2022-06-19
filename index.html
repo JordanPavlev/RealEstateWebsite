@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;1,400&display=swap');
+        </style> 
+    <!-- CSS link-->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Fontawesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>realEstate</title>
+</head>
+<body>
+    <!-- Header-->
+    <header>
+        <a href="index.html" class="logo"><span>real</span>Estate</a>
+
+        <!-- Site navigation-->
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#services">services</a>
+            <a href="#features">features</a>
+            <a href="#agents">agents</a>
+            <a href="#contacts">contacts</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-bars" class="fas fa-bars"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="login.html" class="fas fa-user"></a>
+        </div>
+        
+    </header>
+    
+
+    <script>
+        var menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar')
+
+        menu.onclick = () => {
+            navbar.classList.toggle('active');
+            menu.classList.toggle('fa-times')
+        }
+
+        window.onscroll = () => {
+              navbar.classList.remove('active');
+            menu.classList.remove('fa-times')
+        }
+    </script>
+</body>
+</html>

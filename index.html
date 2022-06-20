@@ -9,6 +9,8 @@
         </style> 
     <!-- CSS link-->
     <link rel="stylesheet" href="styles/style.css">
+    <!--JavaScript link-->
+    
     <!-- Fontawesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>realEstate</title>
@@ -20,35 +22,521 @@
 
         <!-- Site navigation-->
         <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#services">services</a>
-            <a href="#features">features</a>
-            <a href="#agents">agents</a>
-            <a href="#contacts">contacts</a>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#features">Features</a>
+            <a href="#agents">Agents</a>
+            <a href="#contacts">Contacts</a>
         </nav>
 
         <div class="icons">
             <div id="menu-bars" class="fas fa-bars"></div>
-            <a href="#" class="fas fa-heart"></a>
+            <a href="#contact.html" class="fas fa-heart"></a>
             <a href="login.html" class="fas fa-user"></a>
         </div>
         
     </header>
+    <!--Header end-->
     
+    <!--Main section-->
+    <section id="home-section">
 
-    <script>
-        var menu = document.querySelector('#menu-bars');
-        let navbar = document.querySelector('.navbar')
+        <!-- home section starts  -->
 
-        menu.onclick = () => {
-            navbar.classList.toggle('active');
-            menu.classList.toggle('fa-times')
-        }
+<section class="home" id="home">
 
-        window.onscroll = () => {
-              navbar.classList.remove('active');
-            menu.classList.remove('fa-times')
-        }
-    </script>
+    <form action="">
+
+        <h3>Find your next home</h3>
+
+        <div class="buttons-container">
+            <a href="#" id="forRent" class="btn">For rent(America only)</a>
+            <a href="#" id="forSell" class="btn">For sell(Worldwide)</a>
+        </div>
+
+        <div class="inputBox">
+            <input type="search" id="area" name="" placeholder="Neighbourhood">
+            <input type="search" id="country" name="" placeholder="City">
+            <select name="" id="">
+                <option value="" disabled hidden selected>Min</option>
+                <option value="5000">10 000€</option>
+                <option value="10000">15 000€</option>
+                <option value="15000">20 000€</option>
+                <option value="20000">25 000€</option>
+                <option value="25000">30 000€</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Max</option>
+                <option value="30000">50 000€</option>
+                <option value="35000">60 000€</option>
+                <option value="40000">80 000€</option>
+                <option value="45000">100 000€</option>
+                <option value="50000">120 000€</option>
+            </select>
+            <select name="" id="status">
+                <option value="" disabled hidden selected>Rent status</option>
+                <option value="For one night">For one night</option>
+                <option value="For couples">For couples</option>
+                <option value="Party house">Party house</option>
+                <option value="For longer period">For longer period</option>
+                <option value="Pay as you go">Pay as you go</option>
+            </select>
+            <select name="" id="typee">
+                <option value="" disabled hidden selected>Type of rent estate</option>
+                <option value="flat">Flat</option>
+                <option value="house">House</option>
+                <option value="shop">Shop</option>
+                <option value="warehouse">Warehouse</option>
+                <option value="land">Land</option>
+            </select>
+            <select name="" id="Person">
+                <option value="" disabled hidden selected>Number of persons</option>
+                <option value="1 BHK">1 </option>
+                <option value="2 BHK">2 </option>
+                <option value="3 BHK">3 </option>
+                <option value="4 BHK">4 </option>
+                <option value="5 BHK">5 </option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Facilities</option>
+                <option value="parking space">Parking space</option>
+                <option value="swimming pool">Swimming pool</option>
+                <option value="playground">Playground</option>
+                <option value="security">Security</option>
+                <option value="all">All</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Bedrooms</option>
+                <option value="1 bedroom">1 bedroom</option>
+                <option value="2 bedroom">2 bedroom</option>
+                <option value="3 bedroom">3 bedroom</option>
+                <option value="4 bedroom">4 bedroom</option>
+                <option value="5 bedroom">5 bedroom</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Bathrooms</option>
+                <option value="1 bathroom">1 bathroom</option>
+                <option value="2 bathroom">2 bathroom</option>
+                <option value="3 bathroom">3 bedroom</option>
+                <option value="4 bathroom">4 bathroom</option>
+                <option value="5 bathroom">5 bathroom</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Search for rent" id="submit-btn" class="btn"></input>
+
+    </form>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> <span>A way </span>to healthy innovation</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/s-1.jpg" alt="">
+            <h3>Buying home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/s-2.jpg" alt="">
+            <h3>Renting home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/s-3.jpg" alt="">
+            <h3>Selling home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+    <h1 class="heading"> Hot Deals! <span class="fa fa-fire"></span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/img-1.jpg" alt="">
+                <div class="info">
+                    <h3>3 days ago</h3>
+                    <h3>for rent</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>1</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>3,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Modern apartments</h3>
+                    <p>164 Ludlow St 1st Floor, New York, USA</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 1950 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 2 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 1 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">Request info</a>
+                    <a href="#" class="btn">View details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/img-2.jpg" alt="">
+                <div class="info">
+                    <h3>6 days ago</h3>
+                    <h3>for sell</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>2</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>7</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>modern apartments</h3>
+                    <p>jogeshwari west, mumbai, india - 400104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/img-3.jpg" alt="">
+                <div class="info">
+                    <h3>1 days ago</h3>
+                    <h3>for rent</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>1</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>modern apartments</h3>
+                    <p>jogeshwari west, mumbai, india - 400104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/img-4.jpg" alt="">
+                <div class="info">
+                    <h3>9 days ago</h3>
+                    <h3>for rent</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>2</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>modern apartments</h3>
+                    <p>jogeshwari west, mumbai, india - 400104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/img-5.jpg" alt="">
+                <div class="info">
+                    <h3>10 days ago</h3>
+                    <h3>for sell</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>3</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>modern apartments</h3>
+                    <p>jogeshwari west, mumbai, india - 400104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/img-6.jpg" alt="">
+                <div class="info">
+                    <h3>3 days ago</h3>
+                    <h3>for sell</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>1</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>modern apartments</h3>
+                    <p>jogeshwari west, mumbai, india - 400104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- featured section ends -->
+
+<!-- agents section starts  -->
+
+<section class="agents" id="agents">
+
+    <h1 class="heading"><span> Our </span> professionals </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="fas fa-envelope"></a>
+            <a href="#" class="fas fa-phone"></a>
+            <img src="images/pic-1.png" alt="">
+            <h3>George Kurz</h3>
+            <span>agent</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-envelope"></a>
+            <a href="#" class="fas fa-phone"></a>
+            <img src="images/pic-2.png" alt="">
+            <h3>Natasha Peterson</h3>
+            <span>agent</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- agents section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>contact</span> us </h1>
+
+<div class="icons-container">
+
+    <div class="icons">
+        <img src="images/icon-1.png" alt="">
+        <h3>phone number</h3>
+        <p>+617-456-7890</p>
+        <p>+617-282-3540</p>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-2.png" alt="">
+        <h3>email address</h3>
+        <p>realEstate@gmail.com</p>
+        <p>JordanPeterson@gmail.com</p>
+    </div>
+
+     <div class="icons">
+        <img src="images/icon-3.png" alt="">
+        <h3>office address</h3>
+        <p>(617) 326-6661
+            39 Norwell St
+            Boston, Massachusetts(MA), 02121</p>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <form action="">
+        <div class="inputBox">
+            <input type="text" placeholder="name">
+        </div>
+        <div class="inputBox">
+            <input type="email" placeholder="email">
+            <input type="text" placeholder="subject">
+        </div>
+        <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1626697480414!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="footer-container">
+
+        <div class="box-container">
+
+        
+            
+
+            <div class="wrapper">
+                <div class="icon facebook">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook"></i></span>
+                </div>
+                <div class="icon twitter">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                </div>
+                <div class="icon heart">
+                    <div class="tooltip">Account</div>
+                    <span><i class="fa fa-user"></i></span>
+                </div>
+                <div class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </div>
+                <div class="icon youtube">
+                    <div class="tooltip">YouTube</div>
+                    <span><i class="fab fa-youtube"></i></span>
+                </div>
+            </div> 
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+    </section>
+    <!-- main section end.-->
+
+    <script src="/index.js"></script>
 </body>
 </html>

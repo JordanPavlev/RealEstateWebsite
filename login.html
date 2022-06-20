@@ -4,33 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="/styles/loginstyle.css">
     <title>Login</title>
 </head>
 <body>
-        <div class="body">
-          <h2>Login</h2>
-          <hr>
-          <div class="main">
-            <input type="text" class="text" placeholder="Username...">
-            <input type="password" class="pass" placeholder="Password...">
-            <br>
-            <input type="checkbox" class="check">
-            <label for="check" class="label1">Remember Password</label>
-            <br>
-            <button class="btn">Submit</button>
-            <br><br>
-            <hr>
-            <p>↓&nbspMake An Account&nbsp↓</p>
-            <div class="i">
-            <button><i class="fa fa-google"></i> With Google</button>
-            <button><i class="fa fa-github"></i> With GitHub</button>
-            <button><i class="fa fa-spotify"></i> With spotify</button>
-              <button><i class="fa fa-twitter"></i> With Twitter</button>
+    <div class="container">
+        <!--Formes-->
+        <div class="forms">
+          <!--Start Row-->
+          <div class="row">
+            
+            <!--Start Login Form-->
+            <div class="col-md-6 col-sm-12">
+              <div class="form-login">
+      
+                <span class="desc-form"></span>
+                <h2 class="title-form">Log In&#33;</h2>
+                <!--Start Form-->
+                <form class="login" action="" method = "POST">
+                  <div class="input-container">
+                    <input 
+                           type="email" name="email" id="emai" 
+                           autocomplete="off" placeholder="Email" 
+                           required="required" />
+                    <label for="emai">Email</label>
+                  </div>
+      
+                  <div class="input-container">
+                    <input 
+                           type="password" name="password" id="pass" 
+                           autocomplete="new-password" placeholder="Password" 
+                           required="required" />
+                    <label for="pass">Password</label>
+                  </div>
+      
+                  <input class="btn btn-block" name="login" type="submit" value="Log in" />
+      
+                  <div class="footer-form">
+                    <div class="pull-left">
+                      <input id="remember" type="checkbox" name="" />
+                      <label for="remember">Remember me</label>
+                    </div>
+                    <a class="pull-right" href="#"><br/>I don't remember my password?</a>
+                  </div>
+                </form>
+                <!--End Form-->
+              </div>
             </div>
-          </div>
-        </div>  
-        
-        
+            <!--End Login Form-->
+            
+            
+            <!--Start Sign Up Form-->
+            <div class="col-md-6 col-sm-12">
+              <div class="form-signup">
+                <span class="desc-form"></span>
+                <h2 class="title-form">Sign up&#33;</h2>
+                <!--Start Form-->
+                <form class="signup" action="" method = "POST">
+      
+                  <div class="input-container">
+                    <input 
+                           type="text" name="fullname" id="fullname" 
+                           autocomplete="off" placeholder="Full Name" 
+                           required="required" />
+                    <label for="fullname">Full Name</label>
+                  </div>
+      
+                  <div class="input-container">
+                    <input 
+                           type="email" name="email2" id="emai2" 
+                           placeholder="Email" />
+                    <label for="emai2">Email</label>
+                  </div>
+      
+                  <div class="input-container">
+                    <input 
+                           type="password2" name="new-password" id="pass2" 
+                           autocomplete="new-password" placeholder="Password" 
+                           required="required" />
+                    <label for="pass2">Password</label>
+                  </div>
+      
+                  <input class="btn btn-block" name="signup" type="submit" value="Sign up" />
+                </form>
+                <!--end Form-->
+              </div>
+            </div>
+            
+            
+          </div><!--End Row-->
+        </div><!--End forms-->
+      </div><!--End Container-->
+    
+    
+      <script>
+         //Hidd Placeholder On input Focus
+	$('[placeholder]').focus(function () {
+
+$(this).attr('data-text', $(this).attr('placeholder'));
+$(this).attr('placeholder', '');
+
+
+}).blur(function () {
+
+$(this).attr('placeholder', $(this).attr('data-text'));
+});
+      </script>
+  
 </body>
 </html>

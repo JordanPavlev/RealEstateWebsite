@@ -1,0 +1,217 @@
+@import url('http://fonts.googleapis.com/scss2?family=Nunito:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+:root {
+    --black: black;
+    --light-red:  #f9edeb;
+    --blue:#1E90FF;
+}
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+/* HTML style*/
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+/*Body style*/
+body {
+    background:#FFFACD;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFACD;
+    border-bottom: 1.5px solid grey;
+    box-shadow: 210px 210px 120px white;
+}
+
+ header .logo {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 6px;
+
+    color:var(--blue);
+}
+
+ header .logo span {
+    color: var(--black);
+}
+ /* Dropdown Button */
+  
+  nav.primary-navigation {
+    background: transparent;
+    margin-top: 10px;
+   font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+  }
+  nav.primary-navigation ul li {
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+  nav.primary-navigation li a {
+    color: var(--black);
+  }
+  nav.primary-navigation li a:hover {
+    color: var(--blue);
+  }
+  nav.primary-navigation li:hover {
+    cursor: pointer;
+    background-color: #FFF8DC   ;
+    box-shadow: 0px 3px 6px -1px black;
+    
+  }
+  nav.primary-navigation ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+    background: transparent;
+   
+  }
+  nav.primary-navigation ul li:hover > ul,
+  nav.primary-navigation ul li ul:hover {
+    visibility: visible;
+    left: -10%;
+    opacity: 1;
+    display: block;
+    min-width: 250px;
+    text-align: left;
+    background-color: #FFF8DC ;
+    padding-top: 20px;
+    box-shadow: 0px 6px 6px -1px black;
+  }
+  nav.primary-navigation ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border-style: none;
+  }
+  nav.primary-navigation ul li ul li a:hover {
+    padding-left: 10px;
+    border-left: 2px solid var(--blue);
+    box-shadow: 0px 3px 3px -1px black;
+    transition: all 0.3s ease;
+    
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--blue);
+  }
+  
+  ul li ul li a {
+    transition: all 0.5s ease;
+  }
+
+
+ header .icons #menu-bars, header .icons a {
+        height: 4.5rem;
+        line-height: 4.5rem;
+        width: 5rem;
+        font-size: 2rem;
+        margin-right: 0.2rem;
+        border-radius: .5rem;
+        color: var(--black);
+        text-align: center;
+        
+
+}
+
+ header .icons #menu-bars:hover, header .icons a:hover {
+    background-color: var(--blue);
+    color: var(--light-red);
+}
+
+header .icons #menu-bars {
+    display: none;
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1.5rem 1rem;
+
+    }
+}
+
+@media(max-width: 768px) {
+
+    header .icons #menu-bars {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        left: 0; right: 0;
+        top: 100%;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        display: none;
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        background: #fff;
+        border: .1rem solid #333;
+        box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .1);
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        padding: 1.5rem 1rem;
+
+    }
+
+    .footer .footer-container .wrapper {
+        display: nono;
+    }
+
+    .services {
+        display: none;
+    }
+
+    
+}

@@ -1,0 +1,110 @@
+@import url('http://fonts.googleapis.com/scss2?family=Nunito:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+/*Root and general config*/
+:root {
+    --black: black;
+    --light-red:  #f9edeb;
+    --blue: #1E90FF;
+}
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+/* HTML style*/
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+/*Body style*/
+body {
+    background: #e3e3e3;
+}
+/* Here starts the header styles*/
+
+
+.home{
+    min-height: 100vh;
+    background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home form{
+    margin-top: 7rem;
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    border:.1rem solid rgba(0,0,0,.2);
+    width:70rem;
+    padding:2rem;
+}
+
+.home form legend{
+    text-align: center;
+    color:var(--black);
+    font-size: 3rem;
+    font-family: 'Secular One', sans-serif;
+}
+
+.home form .buttons-container{
+    display: flex;
+    gap:1.5rem;
+}
+
+.home form .buttons-container .btn{
+    font-size: 2rem;
+    background-color: var(--blue) ;
+    text-align: center;
+    color: white;
+}
+.home form .buttons-container .btn:focus {
+        background-color: #312b50;
+}
+
+
+.home form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 2rem;
+}
+
+.home form .inputBox input,
+.home form .inputBox select{
+    flex:1 1 25rem;
+    border:.1rem solid #333;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    padding:1rem;
+    text-transform: none;
+}
+
+.home form .btn{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#submit-btn {
+    color: white;
+    font-size: 2rem;
+    height: 30px;
+    background-color: var(--black);
+}
+
+#submit-btn:hover {
+    background-color: #800515;
+}

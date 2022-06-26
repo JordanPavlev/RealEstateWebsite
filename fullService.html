@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/styleService.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><span>real</span>Estate</a>
+
+        <!-- Site navigation-->
+        <nav role="navigation" class="primary-navigation">
+            <ul>
+              <li><a href="#">Home &dtrif;</a>
+                <ul class="dropdown">
+                    <li><a href="./index.html">Main page</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">Iconography</a></li>
+                  </ul>
+            </li>
+              
+              <li><a href="#">Sell &dtrif;</a>
+                <ul class="dropdown">
+                  <li><a href="./fullService.html">Full service</a></li>
+                  <li><a href="#">My home worth ?</a></li>
+                  <li><a href="#">Boulder home values</a></li>
+                  <li><a href="#">Find an agent</a></li>
+                  <li><a href="#">Home selling guide</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Rent &dtrif;</a>
+                <ul class="dropdown">
+                    <li><a href="./rent.html">Apartments for rent</a></li>
+                    <li><a href="#">Houses for rent </a></li>
+                  </ul>
+            </li>
+              <li><a href="#">Buy &dtrif;</a>
+                <ul class="dropdown">
+                    <li><a href="#">Home for sale</a></li>
+                    <li><a href="#">Land for sale</a></li>
+                    <li><a href="#">Recently sold</a></li>
+                    <li><a href="#">Home buying guide</a></li>
+                  </ul>
+            </li>
+            </ul>
+          </nav>
+
+        <div class="icons">
+            <div id="menu-bars" class="fas fa-bars"></div>
+            <a href="#contact.html" class="fas fa-heart"></a>
+            <a href="login.html" class="fas fa-user"></a>
+        </div>
+        
+    </header>
+
+
+    <div class="home">
+        <form name="sell" action="">
+
+            <legend>Find your next home</legend>
+    
+            <div class="buttons-container">
+                <a href="#" id="forRent" class="btn">For rent(America only)</a>
+                <a href="#" id="forSell" class="btn">For sell(Worldwide)</a>
+            </div>
+    
+            <div class="inputBox">
+                
+                <input type="search" id="area" name="" placeholder="Neighbourhood">
+                <input type="search" id="country" name="" placeholder="City">
+                <select name="" id="">
+                    <option value="" disabled hidden selected>Min</option>
+                    <option value="5000">10 000€</option>
+                    <option value="10000">15 000€</option>
+                    <option value="15000">20 000€</option>
+                    <option value="20000">25 000€</option>
+                    <option value="25000">30 000€</option>
+                </select>
+                <select name="" id="">
+                    <option value="" disabled hidden selected>Max</option>
+                    <option value="30000">50 000€</option>
+                    <option value="35000">60 000€</option>
+                    <option value="40000">80 000€</option>
+                    <option value="45000">100 000€</option>
+                    <option value="50000">120 000€</option>
+                </select>
+                <select name="" id="status">
+                    <option value="" disabled hidden selected>Rent status</option>
+                    <option value="For one night">For one night</option>
+                    <option value="For couples">For couples</option>
+                    <option value="Party house">Party house</option>
+                    <option value="For longer period">For longer period</option>
+                    <option value="Pay as you go">Pay as you go</option>
+                </select>
+                <select name="" id="typee">
+                    <option value="" disabled hidden selected>Type of rent estate</option>
+                    <option value="flat">Flat</option>
+                    <option value="house">House</option>
+                    <option value="shop">Shop</option>
+                    <option value="warehouse">Warehouse</option>
+                    <option value="land">Land</option>
+                </select>
+                <select name="" id="Person">
+                    <option value="" disabled hidden selected>Number of persons</option>
+                    <option value="1 BHK">1 </option>
+                    <option value="2 BHK">2 </option>
+                    <option value="3 BHK">3 </option>
+                    <option value="4 BHK">4 </option>
+                    <option value="5 BHK">5 </option>
+                </select>
+                <select name="" id="">
+                    <option value="" disabled hidden selected>Facilities</option>
+                    <option value="parking space">Parking space</option>
+                    <option value="swimming pool">Swimming pool</option>
+                    <option value="playground">Playground</option>
+                    <option value="security">Security</option>
+                    <option value="all">All</option>
+                </select>
+                <select name="" id="">
+                    <option value="" disabled hidden selected>Bedrooms</option>
+                    <option value="1 bedroom">1 bedroom</option>
+                    <option value="2 bedroom">2 bedroom</option>
+                    <option value="3 bedroom">3 bedroom</option>
+                    <option value="4 bedroom">4 bedroom</option>
+                    <option value="5 bedroom">5 bedroom</option>
+                </select>
+                <select name="" id="">
+                    <option value="" disabled hidden selected>Bathrooms</option>
+                    <option value="1 bathroom">1 bathroom</option>
+                    <option value="2 bathroom">2 bathroom</option>
+                    <option value="3 bathroom">3 bedroom</option>
+                    <option value="4 bathroom">4 bathroom</option>
+                    <option value="5 bathroom">5 bathroom</option>
+                </select>
+            </div>
+    
+            <input type="submit" value="Search for rent" id="submit-btn" class="btn"></input>
+    
+        </form>
+    </div>
+    <script src="./script/index.js"></script>
+</body>
+</html>

@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="realestate, website, buy, rent">
+    <meta name="author" content="Jordan Pavlev">
+    <meta name="description" content="Real estate sell, buy and rent website for US">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;1,400&display=swap');
         </style> 
     <!-- CSS link-->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <!--JavaScript link-->
     
     <!-- Fontawesome cdn link  -->
@@ -21,13 +25,42 @@
         <a href="index.html" class="logo"><span>real</span>Estate</a>
 
         <!-- Site navigation-->
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#features">Features</a>
-            <a href="#agents">Agents</a>
-            <a href="#contacts">Contacts</a>
-        </nav>
+            <nav   role="navigation" class="primary-navigation">
+                <ul>
+                    <li><a href="#">Home &dtrif;</a>
+                        <ul class="dropdown">
+                            <li><a href="./index.html">Front page</a></li>
+                            <li><a href="./about.html">About us</a></li>
+                            <li><a href="#">Illustration</a></li>
+                            <li><a href="#">Post Rental</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">Sell &dtrif;</a>
+                        <ul class="dropdown">
+                        <li><a href="./fullService.html">Full service</a></li>
+                        <li><a href="#">My home worth ?</a></li>
+                        <li><a href="#">Boulder homes</a></li>
+                        <li><a href="./agents.html">Find an agent</a></li>
+                        <li><a href="#">Home selling guide</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Rent &dtrif;</a>
+                        <ul class="dropdown">
+                            <li><a href="./rent.html">Apartments for rent</a></li>
+                            <li><a href="#">Houses for rent </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Buy &dtrif;</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Home for sale</a></li>
+                            <li><a href="#">Land for sale</a></li>
+                            <li><a href="#">Recently sold</a></li>
+                            <li><a href="#">Home buying guide</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </nav>
 
         <div class="icons">
             <div id="menu-bars" class="fas fa-bars"></div>
@@ -36,433 +69,103 @@
         </div>
         
     </header>
-    <!--Header end-->
-    
-    <!--Main section-->
-    <section id="home-section">
-
+    <!--Header end--> 
+        
         <!-- home section starts  -->
 
 <section class="home" id="home">
 
-    <form action="">
-
-        <h3>Find your next home</h3>
-
-        <div class="buttons-container">
-            <a href="#" id="forRent" class="btn">For rent(America only)</a>
-            <a href="#" id="forSell" class="btn">For sell(Worldwide)</a>
+    
+    
+    <div class="home-container">
+        <div id="h1-div"><h1 id="default-h1">Find homes first.<br> Tour homes fast.</h1></div>
+        <div class="button-container">
+            <button id="Buy">Buy</button>
+            <button id="Sell">Sell</button>
+            <button id="Rent">Rent</button>
+            <button id="Mortgage">Rentability</button>
         </div>
+        <div id="input-div"><input type="text" placeholder="City, Address, School, Agent, ZIP" id="default-input"><button Submit type="submit" id="submit-btn">Submit</button></div>
 
-        <div class="inputBox">
-            <input type="search" id="area" name="" placeholder="Neighbourhood">
-            <input type="search" id="country" name="" placeholder="City">
-            <select name="" id="">
-                <option value="" disabled hidden selected>Min</option>
-                <option value="5000">10 000€</option>
-                <option value="10000">15 000€</option>
-                <option value="15000">20 000€</option>
-                <option value="20000">25 000€</option>
-                <option value="25000">30 000€</option>
-            </select>
-            <select name="" id="">
-                <option value="" disabled hidden selected>Max</option>
-                <option value="30000">50 000€</option>
-                <option value="35000">60 000€</option>
-                <option value="40000">80 000€</option>
-                <option value="45000">100 000€</option>
-                <option value="50000">120 000€</option>
-            </select>
-            <select name="" id="status">
-                <option value="" disabled hidden selected>Rent status</option>
-                <option value="For one night">For one night</option>
-                <option value="For couples">For couples</option>
-                <option value="Party house">Party house</option>
-                <option value="For longer period">For longer period</option>
-                <option value="Pay as you go">Pay as you go</option>
-            </select>
-            <select name="" id="typee">
-                <option value="" disabled hidden selected>Type of rent estate</option>
-                <option value="flat">Flat</option>
-                <option value="house">House</option>
-                <option value="shop">Shop</option>
-                <option value="warehouse">Warehouse</option>
-                <option value="land">Land</option>
-            </select>
-            <select name="" id="Person">
-                <option value="" disabled hidden selected>Number of persons</option>
-                <option value="1 BHK">1 </option>
-                <option value="2 BHK">2 </option>
-                <option value="3 BHK">3 </option>
-                <option value="4 BHK">4 </option>
-                <option value="5 BHK">5 </option>
-            </select>
-            <select name="" id="">
-                <option value="" disabled hidden selected>Facilities</option>
-                <option value="parking space">Parking space</option>
-                <option value="swimming pool">Swimming pool</option>
-                <option value="playground">Playground</option>
-                <option value="security">Security</option>
-                <option value="all">All</option>
-            </select>
-            <select name="" id="">
-                <option value="" disabled hidden selected>Bedrooms</option>
-                <option value="1 bedroom">1 bedroom</option>
-                <option value="2 bedroom">2 bedroom</option>
-                <option value="3 bedroom">3 bedroom</option>
-                <option value="4 bedroom">4 bedroom</option>
-                <option value="5 bedroom">5 bedroom</option>
-            </select>
-            <select name="" id="">
-                <option value="" disabled hidden selected>Bathrooms</option>
-                <option value="1 bathroom">1 bathroom</option>
-                <option value="2 bathroom">2 bathroom</option>
-                <option value="3 bathroom">3 bedroom</option>
-                <option value="4 bathroom">4 bathroom</option>
-                <option value="5 bathroom">5 bathroom</option>
-            </select>
-        </div>
-
-        <input type="submit" value="Search for rent" id="submit-btn" class="btn"></input>
-
-    </form>
+    </div>
 
 </section>
 
 <!-- home section ends -->
 
-<!-- services section starts  -->
-
-<section class="services" id="services">
-
-    <h1 class="heading"> <span>A way </span>to healthy innovation</h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/s-1.jpg" alt="">
-            <h3>Buying home</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
-            <a href="#" class="btn">learn more</a>
+<!-- Info section starts  -->
+<div class="home-info" id="homeinfo">
+    <div class="img-text">
+        <img src="./images/info-img3.jpg" alt="Image for the site">
+        <div class="info-container">
+            <h2 class="info-h2">Sell for more than the home next door</h2>
+            <p class="info-p">Local realEstate Agents price your home right and make it shine online. Get started with a free consultation.</p>
+            <input type="text" placeholder="Enter your street address" id="default-input"><button Submit type="submit" id="sell-btn">Next</button>
         </div>
-
-        <div class="box">
-            <img src="images/s-2.jpg" alt="">
-            <h3>Renting home</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
-            <a href="#" class="btn">learn more</a>
-        </div>
-
-        <div class="box">
-            <img src="images/s-3.jpg" alt="">
-            <h3>Selling home</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
-            <a href="#" class="btn">learn more</a>
-        </div>
-
     </div>
-
-</section>
-
-<!-- services section ends -->
-
-<!-- featured section starts  -->
-
-<section class="featured" id="featured">
-    <h1 class="heading"> Hot Deals! <span class="fa fa-fire"></span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-1.jpg" alt="">
-                <div class="info">
-                    <h3>3 days ago</h3>
-                    <h3>for rent</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
-                </div>
-            </div>
-            <div class="content">
-                <div class="price">
-                    <h3>3,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>Modern apartments</h3>
-                    <p>164 Ludlow St 1st Floor, New York, USA</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 1950 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 2 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 1 baths </h3>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="btn">Request info</a>
-                    <a href="#" class="btn">View details</a>
-                </div>
-            </div>
+    <div class="img-text2">
+        <img src="./images/info-img1.jpg" alt="Image for the site">
+        <div class="info-container2">
+            <h2 class="info-h2">Your perfect rental is now on realEstate</h2>
+            <p class="info-p">Local realEstate Agents price your home right and make it shine online. Get started with a free consultation.</p>
+            <input type="text" placeholder="City, Address, School, Agent, ZIP" id="default-input"/><button type="submit" id="submit-btn">Submit</button>
         </div>
-
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-2.jpg" alt="">
-                <div class="info">
-                    <h3>6 days ago</h3>
-                    <h3>for sell</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>2</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>7</h3></a>
-                </div>
-            </div>
-            <div class="content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="btn">request info</a>
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-3.jpg" alt="">
-                <div class="info">
-                    <h3>1 days ago</h3>
-                    <h3>for rent</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
-                </div>
-            </div>
-            <div class="content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="btn">request info</a>
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-4.jpg" alt="">
-                <div class="info">
-                    <h3>9 days ago</h3>
-                    <h3>for rent</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>2</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
-                </div>
-            </div>
-            <div class="content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="btn">request info</a>
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-5.jpg" alt="">
-                <div class="info">
-                    <h3>10 days ago</h3>
-                    <h3>for sell</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>3</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
-                </div>
-            </div>
-            <div class="content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="btn">request info</a>
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-6.jpg" alt="">
-                <div class="info">
-                    <h3>3 days ago</h3>
-                    <h3>for sell</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
-                </div>
-            </div>
-            <div class="content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="btn">request info</a>
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div>
-
     </div>
-    
-</section>
+    <div class="img-text">
+        <img src="./images/info-img2.jpg" alt="Image for the site">
+        <div class="info-container">
+            <h2 class="info-h2">Get real time market updates</h2>
+            <p class="info-p">Local realEstate Agents price your home right and make it shine online. Get started with a free consultation.</p>
+            <input type="text" placeholder="Enter your e-mail address" id="default-input"><button Submit type="submit" id="sell-btn">Subscribe</button>
+        </div>
+    </div>
+</div>
 
-<!-- featured section ends -->
+<!-- info section ends -->
 
 <!-- agents section starts  -->
-
-<section class="agents" id="agents">
-
-    <h1 class="heading"><span> Our </span> professionals </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <a href="#" class="fas fa-envelope"></a>
-            <a href="#" class="fas fa-phone"></a>
-            <img src="images/pic-1.png" alt="">
-            <h3>George Kurz</h3>
-            <span>agent</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <a href="#" class="fas fa-envelope"></a>
-            <a href="#" class="fas fa-phone"></a>
-            <img src="images/pic-2.png" alt="">
-            <h3>Natasha Peterson</h3>
-            <span>agent</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-
-    </div>
-
-</section>
+<div class="container"> 
+  <div class="footer">
+  
+    <a href="#" class="box">
+    <svg xmlns="http://www.w3.org/2000/svg" class="box__image" viewBox="0 0 107.8 107.8"><style></style><path d="M30.9 78.7c-2.8 0-4 2.1-4.2 4.2h8.5c-.3-2.5-2-4.2-4.3-4.2zM70.3 78.7c-2.6 0-4.3 2-4.3 5s1.8 5 4.3 5c2.6 0 4.3-2 4.3-5s-1.7-5-4.3-5zM17.6 30.1c.9 0 1.7-.3 2.2-.6v-7.7c-.7 0-1.8.1-2.1.1-2.8.2-3.2 2.7-3.2 4.2s.3 2.6 1 3.3c.4.4 1.2.7 2.1.7zM33.1 21.6c-1.5 0-2.5.9-2.9 2.3h5.4c-.1-1.3-1.1-2.3-2.5-2.3z" class="st0"/><path d="M.1 0L0 107.7l107.7.1.1-107.7L.1 0zm83.6 18.8h3.9v8.6c0 1.9.5 2.5 1.5 2.8 1 .2 2.3 0 3.2-.5V18.8h3.9v14.5h-3.8V33c-.5.2-1.9.7-3.2.7-3.6 0-5.4-1.9-5.4-5.7l-.1-9.2zm-12.5.9c1.1-.8 2.5-1.2 4.2-1.2 1.8 0 3.4.3 5.2 1.2v3.5c-.5-.2-2.2-.8-3.7-1.1-1.5-.3-2.6-.1-3.1.2-.3.1-.4.4-.4.6 0 .3.2.5.5.7.6.3 1.7.5 2.6.7 2.2.4 3.4 1 4.1 2 .6.9.9 2 .6 3.2-.6 3.3-3.7 4.1-6.2 4.1-2.2 0-4.1-.7-5.2-1.3v-3.6c.7.3 2.6 1 4.6 1.2.7.1 1.7.1 2.4-.2.4-.2.6-.5.6-.8 0-.3-.3-.6-.7-.8-.7-.1-1.7-.3-2.5-.4-3.5-.7-5-2.1-4.9-4.5.1-1.5.7-2.7 1.9-3.5zm-10.5 39c.5 0 2.2-.1 2.5-.2v-3.7h3.5v5.7c-2.3.7-4.8.9-6.3.9-3.8 0-8.2-1.7-8.2-6.5 0-4.3 3.8-6.6 9-6.6 1.3 0 3.7.2 5.1.7v2.8c-1.8-.9-4-1-4.9-1-3.1 0-5.3 1.7-5.3 4.1.1 2.4 1.8 3.8 4.6 3.8zm-2.5-43h3.9v3.1h4.5v3.4c-1.1-.1-2.9-.2-4.5-.2v6.1c0 .6 0 1.2.4 1.6.2.2.6.4 1.2.4.9 0 2.4-.3 2.9-.5v3.5c-.8.2-2.2.6-3.6.6-1.8 0-3-.5-3.8-1.5-.6-.9-.9-2.1-.9-3.8l-.1-12.7zm-15.7 3h3.8v.3c.5-.2 1.9-.7 3.2-.7 3.6 0 5.4 1.9 5.4 5.7v9.2H51v-8.6c0-1.9-.5-2.5-1.5-2.8-1-.2-2.3 0-3.2.5v10.9h-3.9l.1-14.5zm1.7 34.7v2.4h-5v2.4h8.3v2.9H35V48.3h12.5v2.9h-8.3v2.1l5 .1zM27.8 20.7c1.2-1.5 3.1-2.4 5.3-2.4 1.9 0 3.5.6 4.6 1.6 1 1 1.6 2.4 1.7 4 0 .5.1 1.6 0 2.9v.2h-9.3c.3 2 1.5 3.1 3.5 3.1 2.8.1 4.9-1.1 5.6-1.4v3.6c-1.2.6-3.3 1.3-5.5 1.3-5.6 0-7.6-3.8-7.6-7.4 0-2.2.6-4.1 1.7-5.5zm-10-2h2v-3.1h3.9v17.6h-3.8v-.3c-.8.4-1.7.6-2.9.6-1.7 0-3.1-.6-4.2-1.7-1.3-1.3-2-3.3-1.9-5.6-.2-3.1 1.1-7.5 6.9-7.5zm.1 29.6H23l7.2 12.8h-5l-4.7-9.6-5 9.6h-4.6l7-12.8zm4.5 40.9c0 .5-.4.8-.8.8s-.8-.3-.8-.8v-6.7c0-2.1-1.7-3.8-3.8-3.8-2.1 0-3.8 1.7-3.8 3.8v6.7c0 .5-.4.8-.8.8s-.8-.3-.8-.8V78.3c0-.5.4-.8.8-.8s.8.3.8.8v.4c1-1 2.3-1.5 3.8-1.5 2.9 0 5.4 2.5 5.4 5.4v6.6zM36 84.5h-9.4c.3 2.5 1.9 4.2 4.2 4.2 1.1 0 2.6-.5 3.2-1.5.2-.3.4-.4.7-.4.4 0 .8.4.8.8 0 .2-.1.3-.2.5l-.3.3c-1 1.2-2.6 1.9-4.3 1.9-4.1 0-5.9-3.5-5.9-6.7s1.9-6.6 5.9-6.6c4.1 0 5.9 3.4 5.9 6.6.2.5-.2.9-.6.9zm7 3.9h.7c.5 0 .8.4.8.8s-.3.8-.8.8H43c-1.9 0-2.8-1-2.8-2.8v-8.1h-1c-.5 0-.8-.4-.8-.8s.3-.8.8-.8h1v-3.4c0-.5.4-.8.8-.8s.8.3.8.8v3.4h2c.5 0 .8.4.8.8s-.3.8-.8.8h-2v8.1c0 1 .2 1.2 1.2 1.2zm19.8-9.8L59 89.4c-.1.4-.4.6-.8.6s-.6-.2-.8-.6l-2.9-8.8-2.9 8.7c-.2.4-.4.6-.8.6s-.6-.2-.8-.6l-3.7-10.8c0-.1-.1-.2-.1-.3 0-.5.3-.8.8-.8.3 0 .6.2.8.6l3 8.8 2.9-8.7c.1-.4.4-.6.8-.6.3 0 .6.1.8.6l2.9 8.7 3-8.7c.1-.4.4-.6.8-.6s.8.3.8.8v.3zm7.5 11.8c-4.1 0-5.9-3.5-5.9-6.7s1.9-6.6 5.9-6.6c4.1 0 5.9 3.4 5.9 6.6.1 3.2-1.8 6.7-5.9 6.7zm7-29.3h-4.2V48.3h4.2v12.8zm7.4 17.8c-2.1 0-3.8 1.7-3.8 3.8v6.5c0 .5-.4.8-.8.8s-.8-.3-.8-.8V78.3c0-.5.4-.8.8-.8s.8.3.8.8v.6c1-1 2.3-1.5 3.8-1.5.5 0 .8.4.8.8 0 .3-.3.7-.8.7zm12 9.9c0 .1.2.2.2.5 0 .4-.4.8-.8.8-.3 0-.5-.1-.7-.4L91.7 84l-2.2 2.2v3.1c0 .5-.4.8-.8.8s-.8-.3-.8-.8V74.2c0-.5.4-.8.8-.8s.8.3.8.8v9.7l6.1-6.1c.2-.2.4-.3.6-.3.4 0 .8.4.8.8 0 .2-.1.4-.3.6l-3.9 3.9 3.9 6zm-6.5-27.4c-3.2 0-5.4-.5-7-1.2v-2.9c2 1.5 5.9 1.6 6.5 1.6.6 0 3.1 0 3.1-1.5 0-2.1-9.7-.1-9.7-5 0-3.3 4.1-4.2 7-4.2 1.8 0 4.3.4 5.8.9v2.6c-2.1-1-4.9-1.1-5.4-1.1-.6 0-3.1-.1-3.1 1.5 0 2.5 9.6.1 9.6 5 0 3.3-3.8 4.3-6.8 4.3z" class="st0"/</svg>
+    </a>
+    
+        <a href="#" class="box">
+   
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  class="box__image" viewBox="0 0 255.1 127.6">
+  <path d="M43.5 61.8c-2.1.4-3.7.9-4.8 1.4-1.1.5-2 1.3-2.6 2.3-.6 1-.9 2.1-.9 3.4 0 1.9.7 3.5 2 4.8 1.3 1.3 3.2 1.9 5.5 1.9 1.3 0 2.6-.2 3.7-.7 1.2-.5 2.3-1.2 3.3-2.2 0 .1.1.3.2.7.2.8.4 1.4.6 1.8h5.9c-.4-1.2-.8-2.2-1-3.2-.2-.9-.3-2.4-.3-4.4l.1-7c0-2.6-.3-4.4-.8-5.3-.5-1-1.5-1.8-2.8-2.4-1.3-.6-3.3-.9-6-.9-2.9 0-5.1.5-6.6 1.6s-2.5 2.7-3.1 4.8l5.4 1c.4-1 .9-1.8 1.4-2.2.6-.4 1.4-.6 2.5-.6 1.6 0 2.6.2 3.2.7.6.5.9 1.3.9 2.5v.6c-1.1.4-3 .9-5.8 1.4m5.8 3.6c0 1.4-.1 2.4-.2 2.9-.2.8-.7 1.4-1.4 2-1 .7-2 1.1-3.1 1.1-1 0-1.8-.3-2.4-.9-.6-.6-.9-1.3-.9-2.2 0-.8.4-1.6 1.2-2.1.5-.3 1.6-.7 3.3-1 1.7-.4 2.9-.7 3.6-.9v1.1zM68.8 75.6c1.3 0 2.5-.3 3.8-.9 1.3-.6 2.3-1.6 3.3-2.9v3.3h5.5V43.9h-6v11.2c-1.8-2.1-4-3.1-6.5-3.1-2.8 0-5 1-6.8 3-1.8 2-2.7 4.9-2.7 8.7 0 3.7.9 6.7 2.8 8.8 1.8 2 4 3.1 6.6 3.1m-1.9-17.4c1-1.1 2.1-1.7 3.6-1.7s2.7.6 3.6 1.7c.9 1.1 1.4 3 1.4 5.6 0 2.3-.5 4.1-1.4 5.2-1 1.2-2.1 1.8-3.5 1.8-1.7 0-3.1-.8-4-2.3-.7-1.1-1-2.8-1-5.2-.2-2.2.3-3.9 1.3-5.1M96.4 75.6c2.5 0 4.5-.6 6.2-1.7 1.7-1.1 2.9-2.8 3.6-5l-6-1c-.3 1.1-.8 2-1.4 2.5-.6.5-1.4.8-2.4.8-1.4 0-2.5-.5-3.4-1.5-.9-1-1.4-2.4-1.4-4.1h15c.1-4.6-.8-8-2.8-10.2-1.9-2.2-4.6-3.3-8-3.3-3 0-5.5 1.1-7.4 3.2-2 2.1-2.9 5-2.9 8.8 0 3.1.7 5.7 2.2 7.8 1.9 2.4 4.8 3.7 8.7 3.7M93 58c.9-.9 1.9-1.4 3.2-1.4 1.2 0 2.3.4 3.1 1.4.8.9 1.3 2.2 1.3 3.9h-8.9c0-1.7.4-3 1.3-3.9M114.4 75.1l4.6-7 4.6 7h7.4l-8.4-11.9 7.7-10.7h-7l-4.3 6.2-4-6.2h-7.2l7.8 10.9-8.2 11.7zM139.9 72.3c1.1 1.2 2.2 2.1 3.2 2.6s2.1.7 3.4.7c2.6 0 4.9-1 6.7-3.1 1.8-2.1 2.8-5 2.8-8.8 0-3.7-.9-6.5-2.7-8.6-1.8-2.1-4.1-3.1-6.7-3.1-1.5 0-2.9.4-4.1 1.1-1.2.7-2.2 1.6-2.9 2.8v-3.3H134v31.2h6V72.3zm1.3-13.9c1-1.1 2.2-1.7 3.6-1.7s2.6.6 3.5 1.7c.9 1.1 1.4 2.9 1.4 5.3 0 2.5-.5 4.4-1.4 5.5-.9 1.1-2.1 1.7-3.5 1.7s-2.7-.6-3.7-1.8c-1-1.2-1.5-3.1-1.5-5.6.2-2.3.7-4 1.6-5.1M166.1 68.1c0-3.8.2-6.4.5-7.6.3-1.2.8-2 1.4-2.5.6-.5 1.3-.7 2.1-.7.9 0 1.8.3 2.8 1l1.9-5.2c-1.3-.8-2.6-1.1-3.9-1.1-1 0-1.8.2-2.6.7-.8.5-1.6 1.5-2.6 3v-3.2h-5.6v22.6h6v-7zM186.2 75.6c2.5 0 4.5-.6 6.2-1.7 1.6-1.1 2.9-2.8 3.6-5l-6-1c-.3 1.1-.8 2-1.4 2.5-.6.5-1.4.8-2.4.8-1.4 0-2.5-.5-3.4-1.5-.9-1-1.4-2.4-1.4-4.1h15c.1-4.6-.8-8-2.8-10.2-1.9-2.2-4.6-3.3-8-3.3-3 0-5.5 1.1-7.4 3.2-2 2.1-2.9 5-2.9 8.8 0 3.1.7 5.7 2.2 7.8 1.8 2.4 4.7 3.7 8.7 3.7M182.7 58c.9-.9 1.9-1.4 3.2-1.4 1.2 0 2.3.4 3.1 1.4.8.9 1.3 2.2 1.3 3.9h-8.9c0-1.7.4-3 1.3-3.9M213.1 70.4c-.8.6-1.9.9-3.5.9-1.4 0-2.5-.3-3.3-.9-.8-.6-1.3-1.5-1.6-2.6l-6 .9c.6 2.1 1.7 3.8 3.5 5.1 1.8 1.2 4.2 1.9 7.3 1.9 3.4 0 5.9-.7 7.7-2.2 1.7-1.5 2.6-3.3 2.6-5.3 0-1.9-.6-3.4-1.9-4.4-1.3-1-3.5-1.9-6.7-2.7-3.2-.7-5-1.3-5.6-1.7-.4-.3-.6-.7-.6-1.1 0-.5.2-.9.7-1.2.7-.4 1.8-.7 3.4-.7 1.2 0 2.2.2 2.9.7.7.5 1.1 1.1 1.4 2l5.6-1c-.6-2-1.6-3.5-3.1-4.5s-3.8-1.5-6.9-1.5c-3.2 0-5.6.7-7.2 2s-2.3 3-2.3 4.9c0 2.2.9 3.9 2.7 5.1 1.3.9 4.3 1.9 9.2 2.9 1 .2 1.7.5 2 .8.3.3.4.7.4 1.1 0 .6-.2 1.1-.7 1.5M128.4 6.4h-1.8l-3.3 8.6h1.8l.7-2h3.4l.8 2h1.9l-3.5-8.6zm-2.1 5.2l1.2-3.2 1.2 3.2h-2.4zM246.4 10.4c.4-.2.7-.4.9-.8.2-.3.3-.7.3-1.1 0-.4-.1-.7-.3-1-.2-.3-.4-.5-.7-.7-.3-.2-.6-.3-.9-.4s-.8-.1-1.5-.1h-3.4V15h2.9c1.1 0 1.8 0 2.1-.1.5-.1.8-.2 1.2-.4.3-.2.6-.5.7-.9.2-.4.3-.7.3-1.1 0-.5-.1-.9-.4-1.3-.2-.4-.6-.7-1.2-.8m-3.8-2.6h2.5c.3 0 .5.1.7.3.1.2.2.4.2.6 0 .3-.1.5-.3.7-.2.2-.4.3-.7.3H242.6V7.8zm3.4 5.3c-.2.2-.4.3-.6.3-.2 0-.6.1-1.2.1h-1.6v-2.3h1.4c.8 0 1.3 0 1.5.1.2.1.4.2.5.4.1.2.2.4.2.7.1.3 0 .5-.2.7M11.2 59.5c-.2.5-.5 1-1 1.4-.5.4-1 .7-1.4.8v1.5c.8-.3 1.5-.7 2.1-1.2v6.2h1.6v-8.6h-1.3zM11.6 118.2c.5-.5.9-.8 1.1-1.1.3-.4.5-.7.7-1.1.1-.3.2-.7.2-1.1 0-.7-.2-1.2-.7-1.7-.5-.5-1.2-.7-2-.7s-1.4.2-1.9.6c-.5.4-.8 1-.9 2l1.6.2c0-.5.1-.8.4-1 .2-.2.5-.3.8-.3.3 0 .6.1.8.3.2.2.3.5.3.8 0 .3-.1.7-.3 1-.2.2-.6.7-1.4 1.4-.9.9-1.5 1.5-1.9 2.1-.3.5-.5 1.1-.6 1.6h5.8v-1.5h-3.3c.1-.1.2-.3.3-.5l1-1" class="st0"/>
+  <path d="M0 0v127.5H255V0H0zm235.8 2h17.3v17.3h-17.3V2zM20.3 2h214.4v17.3H20.3V2zm214.5 105.2H20.3V20.3h214.4v86.9zM2 2h17.3v17.3H2V2zm0 18.3h17.3v86.9H2V20.3zm0 87.9h17.3v17.3H2v-17.3zm18.3 0h214.4v17.3H20.3v-17.3zm232.8 17.4h-17.3v-17.3h17.3v17.3zM235.8 20.3h17.3v86.9h-17.3V20.3z" class="st0"/>
+</svg>
+    </a>
+    
+        <a href="#" class="box">
+   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="box__image" viewBox="0 0 75.4 17.8"><path d="M7.8 9.6h1V.5h-1V.2h.5c1.1 0 1.6 0 2.3-.2v5.1c.5-.7 1.1-1.1 2-1.1 1.6 0 2.8 1.3 2.8 3 0 .9-.4 1.8-.9 2.4-.4.4-1.1.7-1.8.7-.9 0-1.5-.3-2-1v.9H7.8v-.4zm4.4.1c.5 0 .8-.2.9-.6.1-.4.2-1.3.2-2.4 0-1.1-.1-1.5-.3-1.8-.2-.2-.4-.4-.8-.4-.5 0-1 .2-1.3.6-.4.4-.6 1.1-.6 2 .1 1.6.9 2.6 1.9 2.6M15.6 9.6h1v-5h-1v-.4h.5c1.1 0 1.6 0 2.3-.2v5.6h1v.4h-3.7v-.4zM19.9 7.8h.4c0 .5.1.7.4 1.1.4.5 1 .8 1.6.8.7 0 1.3-.4 1.3-.9 0-.3-.1-.5-.4-.6-.2-.1-.3-.1-1.1-.4-.5-.1-1-.3-1.2-.4-.5-.2-.9-.8-.9-1.5 0-1 .9-1.9 1.9-1.9.4 0 .7.1 1.2.3.2.1.3.1.4.1.1 0 .2-.1.2-.4h.4v1.7h-.4c-.1-.4-.1-.5-.4-.8-.3-.2-.8-.4-1.3-.4-.6 0-1 .3-1 .8 0 .4.3.6.9.8.8.2 1.3.3 1.6.5.7.3 1.1.8 1.1 1.5 0 1.3-.9 2.1-2.2 2.1-.5 0-1-.1-1.4-.4-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.2.4h-.4V7.8zM25.9 4.6h-1v-.3c1-.5 1.8-1.4 2.3-2.7h.4v2.5h1.2v.4h-1.2v4.1c0 .5.2.8.5.8.4 0 .6-.2.8-1l.4.1c-.1.5-.2.7-.3 1-.3.4-.9.7-1.6.7-1 0-1.5-.5-1.5-1.5V4.6zM29.7 9.6h1v-5h-1v-.4h.4c1.2 0 1.7 0 2.4-.2v1.3c.4-.8 1-1.3 1.7-1.3s1.2.5 1.2 1.1c0 .5-.4.9-.9.9s-.9-.4-.9-.8c0-.2.1-.3.2-.5v-.1c0-.1 0-.1-.1-.1s-.4.2-.6.4c-.5.6-.6 1.1-.6 2v2.6h1.1v.5h-3.9v-.4zM38.8 4.1c1.9 0 3.3 1.3 3.3 3.1 0 1.7-1.5 3-3.3 3-1.9 0-3.3-1.3-3.3-3 0-1.8 1.5-3.1 3.3-3.1m0 5.6c.5 0 1-.2 1.2-.6.1-.3.2-.9.2-2 0-1.2-.1-1.8-.3-2.1-.2-.4-.6-.5-1.1-.5-.5 0-1 .2-1.1.6-.2.3-.2.9-.2 2 0 1.2.1 1.8.3 2.1.1.4.6.5 1 .5M43.1 7.8h.4c0 .5.1.7.4 1.1.4.5 1 .8 1.6.8.7 0 1.3-.4 1.3-.9 0-.2-.1-.5-.4-.6-.3-.1-.4-.2-1.1-.4-.5-.1-1-.3-1.2-.4-.6-.2-.9-.9-.9-1.5C43.1 4.9 44 4 45 4c.4 0 .7.1 1.2.3.2.1.3.1.4.1.1 0 .2-.1.2-.4h.4v1.7h-.4c-.1-.4-.1-.5-.4-.8-.3-.4-.9-.6-1.3-.6-.6 0-1 .3-1 .8 0 .4.3.6.9.8.8.2 1.3.3 1.6.5.7.3 1.1.8 1.1 1.5 0 1.3-.9 2.1-2.2 2.1-.5 0-1-.1-1.4-.4-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.2.4h-.4V7.8zM51.5 4c1.9 0 3.3 1.3 3.3 3.1 0 1.7-1.5 3-3.3 3-1.9 0-3.3-1.3-3.3-3S49.7 4 51.5 4m0 5.7c.5 0 1-.2 1.2-.6.1-.3.2-.9.2-2 0-1.2-.1-1.8-.3-2.1-.2-.4-.6-.5-1.1-.5-.5 0-1 .2-1.1.6-.2.3-.2.9-.2 2 0 1.2.1 1.8.3 2.1.2.3.6.5 1 .5M61.2 8.4c-.5 1.1-1.4 1.7-2.6 1.7-1.7 0-3.1-1.3-3.1-3S57 4 58.8 4C60 4 61 4.8 61 5.6c0 .5-.4 1-.9 1s-.9-.4-.9-.9c0-.4.2-.7.5-.9-.2-.2-.5-.3-.9-.3-1.1 0-1.4.7-1.4 2.8 0 1.8.4 2.5 1.5 2.5.8 0 1.5-.5 2-1.4h.3zM61.3 9.6h1v-5h-1v-.4h.5c1.1 0 1.6 0 2.3-.2v5.6h1v.4h-3.7v-.4zm.7-8c0-.5.5-1 1-1s1 .4 1 1c0 .5-.4 1-1 1-.5 0-1-.4-1-1m-45.6 0c0-.5.5-1 1-1s1 .4 1 1c0 .5-.3 1-.9 1s-1.1-.4-1.1-1M71.6 9.4c-.4.4-.8.7-1.3.7s-1-.3-1.3-.9c-.5.6-1.2 1-2 1-1 0-1.6-.6-1.6-1.4 0-1.2 1.3-2 3.6-2.2v-.4c0-1.2 0-1.2-.1-1.4-.1-.2-.4-.3-.8-.3-.5 0-.9.2-.9.4 0 .1 0 .1.1.2.1.2.2.3.2.5 0 .4-.4.8-.8.8s-.7-.3-.7-.8c0-.8 1.1-1.5 2.4-1.5.9 0 1.6.2 2 .6.3.3.4.5.4 1.4v2.7c0 .5.1.6.3.6.1 0 .2-.1.4-.2l.1.2zM69 6.9c-1.3 0-2 .5-2 1.3 0 .6.4 1.1 1 1.1.3 0 .6-.2.8-.5.1-.1.2-.4.2-1.1v-.8zM71.7 9.6h1V.5h-1V.2h.5c1.1 0 1.6 0 2.3-.2v9.6h1v.4h-3.7v-.4zM6.7 6.9H5.2l-.5 3.2h-.8l.4-3.2H2.4l-.5 3.2h-.8l.5-3.2H0V6h1.7L2 4H.4v-.8h1.7l.5-3h.8l-.5 3h1.9l.4-3H6l-.4 3H7V4H5.6l-.3 2h1.4v.9zM2.8 4l-.3 2h2l.3-2h-2zM16.2 17.4h1.9v.4h-2.3v-4.2h.4zM19.7 13.6h.4v4.2h-.4zM25.3 17.1v-3.5h.4v4.2h-.5l-2.5-3.6v3.6h-.5v-4.2h.6zM28.2 15.4h.1l1.9-1.8h.6l-2.1 1.9 2.3 2.3h-.7l-2-2.2h-.1v2.2h-.4v-4.2h.4zM32.9 17.4h2.2v.4h-2.6v-4.2h2.6v.4h-2.2v1.4h2v.4h-2zM36.9 13.6h1.4c1 0 2.2.7 2.2 2.1 0 1.4-1.1 2.1-2.2 2.1h-1.4v-4.2zm.4 3.8h.8c1.3 0 1.9-.8 1.9-1.7 0-.9-.6-1.7-1.9-1.7h-.8v3.4zM43.7 13.6h1.2c.7 0 1.3.3 1.3 1 0 .5-.3.8-.7.9.6 0 .9.4.9 1 0 .3-.2 1.1-1.5 1.1h-1.3v-4zm.4 1.8h.9c.4 0 .8-.2.8-.7 0-.2-.1-.7-.9-.7h-.8v1.4zm0 2h.8c.6 0 1.1-.2 1.1-.8 0-.5-.4-.8-1-.8h-.9v1.6zM49.5 17.8h-.4V16l-1.6-2.4h.5l1.3 2 1.2-2h.5L49.5 16zM54 17.8h1v-4.1h-1v4.1zm.4-5.8c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5c.1-.3-.2-.5-.5-.5m2.8 3.2c-.7-.1-.9-.2-.9-.4s.3-.4.8-.4.9.1 1.3.4l.6-.6c-.5-.4-1.1-.6-1.8-.6-1 0-1.7.5-1.7 1.2 0 .9.7 1.2 1.7 1.3.8.1 1.1.2 1.1.5s-.3.5-.9.5c-.6 0-1-.1-1.4-.4l-.6.6c.6.5 1.2.6 1.9.6 1 0 1.8-.5 1.8-1.3-.1-1-.9-1.3-1.9-1.4m4.2-1.7c-1.2 0-2.1 1-2.1 2.1 0 1.2 1 2.1 2.1 2.1 1.2 0 2.1-1 2.1-2.1s-.9-2.1-2.1-2.1m0 3.4c-.7 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2 1.2.5 1.2 1.2-.5 1.2-1.2 1.2m8.7-3.4c-.5 0-.9.1-1.3.4l-.2.2.5.5c.2-.2.5-.3.9-.3.5 0 .9.4.9.7v.2H70c-1.3 0-1.9.5-1.9 1.3s.6 1.3 1.5 1.3c.5 0 .9 0 1.2-.4l.1-.1v.4h.9V15c.1-.9-.6-1.5-1.7-1.5m.9 2.6c0 .5-.4.9-1.1.9-.4 0-.7-.2-.7-.5 0-.4.3-.6.9-.6h.9v.2zm2.4-1.9v-.5h-.9v4.1h1v-2.3c0-.7.5-.9 1-.9v-1c-.7 0-1 .3-1.1.6m-7.4-.7c-.5 0-.9.2-1.1.4v-2.1l-1 1v4.9h.9v-.4c.3.3.7.4 1.2.4s1-.2 1.4-.6c.4-.4.6-1 .6-1.5 0-1.1-.9-2.1-2-2.1m-.2 3.4c-.4 0-.8-.2-1-.5V15c.2-.3.6-.5 1-.5.7 0 1.2.5 1.2 1.2s-.5 1.2-1.2 1.2"/></svg>
+    </a>
+    
+        <a href="#" class="box">
+    <svg xmlns="http://www.w3.org/2000/svg" class="box__image" viewBox="0 0 256 101.5"><path d="M0 67.3h6.9V3.7H0V1.1h3.2C11 1.1 14.3.9 19.3 0v35.9c3.4-5 8-7.5 13.9-7.5 10.9 0 19.3 9.2 19.3 21 0 6-2.6 12.5-6.6 16.6-3.1 3.1-7.7 4.9-12.5 4.9-6 0-10.4-2.3-14.1-7.1v6.1H0v-2.6zm31.2.5c3.3 0 5.9-1.5 6.6-4.2.7-2.6 1.2-9.1 1.2-16.9 0-7.5-.4-10.6-1.9-12.6-1.2-1.8-3.1-2.7-5.4-2.7-3.3 0-6.8 1.5-9 4.1-2.7 3.1-4.1 7.9-4.1 14.2.2 11 5.1 18.1 12.6 18.1zM54.9 67.3h6.9V31.9h-6.9v-2.6h3.2c7.8 0 11.2-.2 16.1-1.1v39H81v2.6H54.9v-2.5zM85.1 54.8h2.7c.3 3.2.9 5.2 2.6 7.4 2.6 3.5 7.1 5.9 11.4 5.9 4.9 0 8.8-2.8 8.8-6.3 0-1.8-1-3.4-2.7-4.5-1.5-.9-2-1-7.4-2.5-3.4-.8-6.7-2-8.3-2.7-3.9-1.8-6.6-6.1-6.6-10.6 0-7.3 6-13.2 13.3-13.2 2.8 0 4.9.6 8.4 2.1 1.4.6 2 .7 2.6.7.9 0 1.3-.6 1.5-2.8h2.6v12.1h-2.6c-.4-2.6-1-3.7-2.5-5.3-2.4-2.5-6-4-9.4-4-4.2 0-7.2 2.2-7.2 5.4 0 2.6 1.9 4.3 6 5.4 5.7 1.4 8.9 2.4 11 3.2 5 2.1 7.6 5.7 7.6 10.8 0 8.8-6.5 15-15.5 15-3.7 0-7.1-1-10.1-2.9-1-.6-1.4-.8-2.1-.8-1 0-1.5.9-1.5 2.7H85V54.8zM127 31.9h-6.8v-1.6c6.9-3.2 12.9-10.1 16.4-18.6h2.8v17.7h8.6V32h-8.6v28.7c0 3.5 1.1 5.4 3.3 5.4 2.8 0 4.1-1.8 5.3-6.7l3 .5c-.6 3-1.4 4.6-2.7 6.3-2.4 2.9-6.5 4.7-10.9 4.7-7 0-10.3-3.3-10.3-10.2V31.9zM153.5 67.3h6.9V31.9h-6.9v-2.6h2.8c8.1 0 11.6-.2 16.5-1.1v8.9c2.7-5.5 7.2-8.8 12-8.8s8.4 3.4 8.4 8c0 3.8-2.8 6.6-6.4 6.6-3.5 0-6.1-2.5-6.1-5.8 0-1.4.4-2.4 1.3-3.6.2-.2.3-.4.3-.7 0-.5-.3-.8-.8-.8-.9 0-3 1.4-4.2 3-3.3 3.9-4.5 7.9-4.5 14.2v18h7.9v2.6h-27.2v-2.5zM217.3 28.3c13.1 0 23.1 9.3 23.1 21.5 0 11.6-10.3 21-23.1 21-13 0-23.1-9.4-23.1-21.2 0-11.9 10.2-21.3 23.1-21.3zm0 39.8c3.6 0 6.7-1.6 8.1-4.4 1-2.1 1.5-6.5 1.5-13.9 0-8.6-.5-12.7-2-14.8-1.6-2.5-4.4-3.8-7.7-3.8-3.6 0-6.7 1.6-8 4.4-1.1 2.2-1.6 6.6-1.6 14.1 0 8.2.6 12.5 2 14.6 1.5 2.5 4.4 3.8 7.7 3.8zM242.2 63.9c0-4.2 4-7.5 8.3-6.7 3.3.7 5.7 3.7 5.5 7.1-.2 3.7-3.2 6.6-6.9 6.6-3.8 0-6.9-3.1-6.9-7z" class="st0"/><g><path d="M8.6 99.6h7.6v1.5H7V84.8h1.7v14.8zM24.1 101.2h-1.7V84.8h1.7v16.4zM44.3 98.7V84.9H46v16.3h-2.1l-9.7-14v14h-1.7V84.8h2.1l9.7 13.9zM56 91.9h.2l7.7-7.1h2.4l-8.2 7.4 8.7 8.9h-2.4l-8-8.4H56v8.4h-1.7V84.8H56v7.1zM74.5 99.6h8.7v1.5H72.8V84.8H83v1.5h-8.5v5.6h7.9v1.5h-7.9v6.2zM90.2 84.8h5.4c4.1 0 8.6 2.7 8.6 8.2 0 5.4-4.5 8.2-8.6 8.2h-5.4V84.8zm1.7 14.8h3.2c5 0 7.3-3.3 7.3-6.6 0-3.4-2.3-6.6-7.3-6.6h-3.2v13.2zM116.8 84.8h4.9c2.7 0 5.3 1 5.3 4.1 0 1.8-1.1 3.2-2.9 3.6 2.3.2 3.7 1.7 3.7 4.1 0 1.1-.7 4.5-6 4.5h-5V84.8zm1.7 7.2h3.3c1.6 0 3.3-.8 3.3-2.9 0-.7-.3-2.8-3.5-2.8h-3.2V92zm0 7.6h3.2c2.4 0 4.3-.9 4.3-3.1 0-2.1-1.4-3.2-4.1-3.2h-3.4v6.3zM139.7 101.2H138v-7l-6.1-9.3h2.1l4.9 7.7 4.9-7.7h2.1l-6.1 9.3v7zM169.9 91c-2.7-.3-3.6-.7-3.6-1.7 0-.9 1.1-1.5 3.2-1.5 2 0 3.7.6 5.1 1.6l2.2-2.3-.1-.1c-1.9-1.6-4.4-2.5-7.1-2.5-3.9 0-6.8 1.9-6.8 4.9 0 3.4 2.7 4.6 6.7 4.9 3.1.3 4.2.8 4.2 2 0 1.1-1.1 1.9-3.7 1.9-2.2 0-3.8-.5-5.4-1.7l-2.3 2.3.1.1c2.2 1.8 4.6 2.5 7.5 2.5 4.1 0 7.2-1.9 7.2-5.2.1-3.4-2.9-4.7-7.2-5.2zm-10.8-12.5c-1.2 0-2.1.9-2.1 2.1 0 1.2.9 2.1 2.1 2.1 1.2 0 2.1-.9 2.1-2.1 0-1.2-.9-2.1-2.1-2.1zm-1.8 22.6h3.8V84.9h-3.8v16.2zm29.2-16.5c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.5 8.5-3.8 8.5-8.5c-.1-4.7-3.9-8.5-8.5-8.5zm.1 13.2c-2.6 0-4.7-2.1-4.7-4.8 0-2.6 2.1-4.7 4.7-4.7s4.8 2.1 4.8 4.7-2.2 4.8-4.8 4.8zM233.9 87v-2.2h-3.7v16.3h3.9v-9.2c.1-2.8 2.1-3.4 4-3.5v-3.9c-2.6.2-4 1.6-4.2 2.5zm-29.3-2.4c-1.9 0-3.5.7-4.5 1.7V78l-3.9 3.8v19.3h3.6l.1-1.4c1.4 1.3 2.7 1.7 4.6 1.7h.1c1.9 0 3.9-.9 5.4-2.5 1.6-1.6 2.5-3.8 2.5-6 0-4.5-3.6-8.3-7.9-8.3zm-.6 13.2c-1.5 0-3-.8-3.9-2V90.3c.9-1.3 2.3-2 3.9-2 2.6 0 4.8 2.1 4.7 4.7.1 2.6-2 4.8-4.7 4.8zm17-13.2c-2 0-3.7.5-5.1 1.6-.3.2-.6.4-.8.7l2.1 2.1c.8-.8 2.1-1.2 3.6-1.2 2.2 0 3.4 1.5 3.4 2.9v.6h-3.6c-5 0-7.6 1.8-7.6 5.1 0 3 2.4 5.1 5.9 5.1 2.1 0 3.6-.1 4.9-1.4l.4-.4v1.6h3.7V90.5c.1-3.6-2.7-5.9-6.9-5.9zm3.3 10.2c0 2.1-1.7 3.5-4.3 3.5-1.7 0-2.8-.8-2.8-2.1 0-1.5 1.2-2.2 3.7-2.2h3.5v.8z" class="st0"/></g><g><path d="M0 67.3h6.9V3.7H0V1.1h3.2C11 1.1 14.3.9 19.3 0v35.9c3.4-5 8-7.5 13.9-7.5 10.9 0 19.3 9.2 19.3 21 0 6-2.6 12.5-6.6 16.6-3.1 3.1-7.7 4.9-12.5 4.9-6 0-10.4-2.3-14.1-7.1v6.1H0v-2.6zm31.2.5c3.3 0 5.9-1.5 6.6-4.2.7-2.6 1.2-9.1 1.2-16.9 0-7.5-.4-10.6-1.9-12.6-1.2-1.8-3.1-2.7-5.4-2.7-3.3 0-6.8 1.5-9 4.1-2.7 3.1-4.1 7.9-4.1 14.2.2 11 5.1 18.1 12.6 18.1zM54.9 67.3h6.9V31.9h-6.9v-2.6h3.2c7.8 0 11.2-.2 16.1-1.1v39H81v2.6H54.9v-2.5zM85.1 54.8h2.7c.3 3.2.9 5.2 2.6 7.4 2.6 3.5 7.1 5.9 11.4 5.9 4.9 0 8.8-2.8 8.8-6.3 0-1.8-1-3.4-2.7-4.5-1.5-.9-2-1-7.4-2.5-3.4-.8-6.7-2-8.3-2.7-3.9-1.8-6.6-6.1-6.6-10.6 0-7.3 6-13.2 13.3-13.2 2.8 0 4.9.6 8.4 2.1 1.4.6 2 .7 2.6.7.9 0 1.3-.6 1.5-2.8h2.6v12.1h-2.6c-.4-2.6-1-3.7-2.5-5.3-2.4-2.5-6-4-9.4-4-4.2 0-7.2 2.2-7.2 5.4 0 2.6 1.9 4.3 6 5.4 5.7 1.4 8.9 2.4 11 3.2 5 2.1 7.6 5.7 7.6 10.8 0 8.8-6.5 15-15.5 15-3.7 0-7.1-1-10.1-2.9-1-.6-1.4-.8-2.1-.8-1 0-1.5.9-1.5 2.7H85V54.8zM127 31.9h-6.8v-1.6c6.9-3.2 12.9-10.1 16.4-18.6h2.8v17.7h8.6V32h-8.6v28.7c0 3.5 1.1 5.4 3.3 5.4 2.8 0 4.1-1.8 5.3-6.7l3 .5c-.6 3-1.4 4.6-2.7 6.3-2.4 2.9-6.5 4.7-10.9 4.7-7 0-10.3-3.3-10.3-10.2V31.9zM153.5 67.3h6.9V31.9h-6.9v-2.6h2.8c8.1 0 11.6-.2 16.5-1.1v8.9c2.7-5.5 7.2-8.8 12-8.8s8.4 3.4 8.4 8c0 3.8-2.8 6.6-6.4 6.6-3.5 0-6.1-2.5-6.1-5.8 0-1.4.4-2.4 1.3-3.6.2-.2.3-.4.3-.7 0-.5-.3-.8-.8-.8-.9 0-3 1.4-4.2 3-3.3 3.9-4.5 7.9-4.5 14.2v18h7.9v2.6h-27.2v-2.5zM217.3 28.3c13.1 0 23.1 9.3 23.1 21.5 0 11.6-10.3 21-23.1 21-13 0-23.1-9.4-23.1-21.2 0-11.9 10.2-21.3 23.1-21.3zm0 39.8c3.6 0 6.7-1.6 8.1-4.4 1-2.1 1.5-6.5 1.5-13.9 0-8.6-.5-12.7-2-14.8-1.6-2.5-4.4-3.8-7.7-3.8-3.6 0-6.7 1.6-8 4.4-1.1 2.2-1.6 6.6-1.6 14.1 0 8.2.6 12.5 2 14.6 1.5 2.5 4.4 3.8 7.7 3.8zM242.2 63.9c0-4.2 4-7.5 8.3-6.7 3.3.7 5.7 3.7 5.5 7.1-.2 3.7-3.2 6.6-6.9 6.6-3.8 0-6.9-3.1-6.9-7z" class="st0"/><g><path d="M8.6 99.6h7.6v1.5H7V84.8h1.7v14.8zM24.1 101.2h-1.7V84.8h1.7v16.4zM44.3 98.7V84.9H46v16.3h-2.1l-9.7-14v14h-1.7V84.8h2.1l9.7 13.9zM56 91.9h.2l7.7-7.1h2.4l-8.2 7.4 8.7 8.9h-2.4l-8-8.4H56v8.4h-1.7V84.8H56v7.1zM74.5 99.6h8.7v1.5H72.8V84.8H83v1.5h-8.5v5.6h7.9v1.5h-7.9v6.2zM90.2 84.8h5.4c4.1 0 8.6 2.7 8.6 8.2 0 5.4-4.5 8.2-8.6 8.2h-5.4V84.8zm1.7 14.8h3.2c5 0 7.3-3.3 7.3-6.6 0-3.4-2.3-6.6-7.3-6.6h-3.2v13.2zM116.8 84.8h4.9c2.7 0 5.3 1 5.3 4.1 0 1.8-1.1 3.2-2.9 3.6 2.3.2 3.7 1.7 3.7 4.1 0 1.1-.7 4.5-6 4.5h-5V84.8zm1.7 7.2h3.3c1.6 0 3.3-.8 3.3-2.9 0-.7-.3-2.8-3.5-2.8h-3.2V92zm0 7.6h3.2c2.4 0 4.3-.9 4.3-3.1 0-2.1-1.4-3.2-4.1-3.2h-3.4v6.3zM139.7 101.2H138v-7l-6.1-9.3h2.1l4.9 7.7 4.9-7.7h2.1l-6.1 9.3v7zM169.9 91c-2.7-.3-3.6-.7-3.6-1.7 0-.9 1.1-1.5 3.2-1.5 2 0 3.7.6 5.1 1.6l2.2-2.3-.1-.1c-1.9-1.6-4.4-2.5-7.1-2.5-3.9 0-6.8 1.9-6.8 4.9 0 3.4 2.7 4.6 6.7 4.9 3.1.3 4.2.8 4.2 2 0 1.1-1.1 1.9-3.7 1.9-2.2 0-3.8-.5-5.4-1.7l-2.3 2.3.1.1c2.2 1.8 4.6 2.5 7.5 2.5 4.1 0 7.2-1.9 7.2-5.2.1-3.4-2.9-4.7-7.2-5.2zm-10.8-12.5c-1.2 0-2.1.9-2.1 2.1 0 1.2.9 2.1 2.1 2.1 1.2 0 2.1-.9 2.1-2.1 0-1.2-.9-2.1-2.1-2.1zm-1.8 22.6h3.8V84.9h-3.8v16.2zM233.9 87v-2.2h-3.7v16.3h3.9v-9.2c.1-2.8 2.1-3.4 4-3.5v-3.9c-2.6.2-4 1.6-4.2 2.5zM221 84.6c-2 0-3.7.5-5.1 1.6-.3.2-.6.4-.8.7l2.1 2.1c.8-.8 2.1-1.2 3.6-1.2 2.2 0 3.4 1.5 3.4 2.9v.6h-3.6c-5 0-7.6 1.8-7.6 5.1 0 3 2.4 5.1 5.9 5.1 2.1 0 3.6-.1 4.9-1.4l.4-.4v1.6h3.7V90.5c.1-3.6-2.7-5.9-6.9-5.9zm3.3 10.2c0 2.1-1.7 3.5-4.3 3.5-1.7 0-2.8-.8-2.8-2.1 0-1.5 1.2-2.2 3.7-2.2h3.5v.8zm-19.7-10.2c-1.9 0-3.5.7-4.5 1.7V78l-3.9 3.8v19.3h3.6l.1-1.4c1.4 1.3 2.7 1.7 4.6 1.7h.1c1.9 0 3.9-.9 5.4-2.5 1.6-1.6 2.5-3.8 2.5-6 0-4.5-3.6-8.3-7.9-8.3zm-.6 13.2c-1.5 0-3-.8-3.9-2V90.3c.9-1.3 2.3-2 3.9-2 2.6 0 4.8 2.1 4.7 4.7.1 2.6-2 4.8-4.7 4.8zm-17.5-13.2c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.5 8.5-3.8 8.5-8.5c-.1-4.7-3.9-8.5-8.5-8.5zm.1 13.2c-2.6 0-4.7-2.1-4.7-4.8 0-2.6 2.1-4.7 4.7-4.7s4.8 2.1 4.8 4.7-2.2 4.8-4.8 4.8z" class="st0"/></g></g></svg>
+    </a>
+    
+        <a href="#" class="box">
+    <svg xmlns="http://www.w3.org/2000/svg" class="box__image" viewBox="0 0 49 38.2"><path d="M15.2 31.6l1.2-6.1 1.3 6.1v1.3h1.7v-1.3l-1.8-8.1h-2.4l-1.8 8.1v1.3h1.8zM23.3 13.3l1.2-6.1 1.3 6.1v1.4h1.7v-1.3l-1.8-8.1h-2.3l-1.9 8.1v1.3h1.8zM31.8 32.9h1.7v-7.8h2.4v-1.6h-6.5v1.6h2.4zM7.1 10.9h1.3c1 0 1.7-.2 2.2-.7.5-.5.6-1.2.6-2.1s-.1-1.6-.6-2.1-1.2-.7-2.2-.7H5.3v9.4h1.8v-3.8zm0-4h1.3c.8 0 1.2.3 1.2 1v.3c0 .7-.4 1-1.2 1H7.1V6.9zM15.2 10.9h1l1.5 3.8h1.6V14L18 10.6c.9-.4 1.4-1.2 1.4-2.5 0-.9-.2-1.6-.7-2.1-.5-.5-1.2-.7-2.2-.7h-2.9v9.4h1.8v-3.8zm0-4h1.2c.8 0 1.2.3 1.2 1v.3c0 .7-.4 1-1.2 1h-1.2V6.9zM32.7 14.9c1 0 1.7-.2 2.2-.7.5-.5.7-1.2.7-2.1V9.9h-2.9v1.6h1.2v.7c0 .7-.4 1-1.2 1-.8 0-1.2-.3-1.2-1V7.8c0-.7.4-1 1.2-1 .8 0 1.2.3 1.2 1v.4h1.8v-.3c0-.9-.2-1.6-.7-2.1-.5-.5-1.2-.7-2.2-.7-1 0-1.7.2-2.2.7-.6.6-.9 1.2-.9 2.1V12c0 .9.2 1.6.7 2.1.5.5 1.3.8 2.3.8M40.7 14.9c1 0 1.7-.2 2.2-.7.5-.5.7-1.2.7-2.1V7.9c0-.9-.2-1.6-.7-2.1-.5-.5-1.2-.7-2.2-.7-1 0-1.7.2-2.2.7-.5.6-.7 1.2-.7 2.1V12c0 .9.2 1.6.7 2.1.5.5 1.2.8 2.2.8m-1.2-7.1c0-.7.4-1 1.2-1s1.2.3 1.2 1v4.4c0 .7-.4 1-1.2 1s-1.2-.3-1.2-1V7.8zM7.1 27.3l2.8 5.6h1.3v-9.4H9.4v5.6l-2.8-5.6H5.3v9.4h1.8zM24.5 33.1c1 0 1.7-.2 2.2-.7.5-.5.7-1.2.7-2.1v-6.8h-1.8v6.9c0 .7-.4 1-1.2 1-.8 0-1.2-.3-1.2-1v-6.9h-1.8v6.8c0 .9.2 1.6.7 2.1.7.4 1.4.7 2.4.7M40.7 31.5c-.8 0-1.2-.4-1.2-1.2h-1.8c0 .9.3 1.6.8 2.1s1.2.8 2.2.8c.9 0 1.7-.2 2.2-.7.5-.5.8-1.1.8-2 0-.6-.1-1-.4-1.4-.3-.4-.6-.7-1-.9l-1.2-.6c-.4-.2-.7-.4-1-.6-.3-.2-.4-.5-.4-.8 0-.6.4-1 1.1-1 .8 0 1.2.4 1.2 1.2h1.8c0-.9-.3-1.6-.8-2.1s-1.2-.8-2.2-.8c-.9 0-1.7.2-2.2.7-.5.5-.8 1.1-.8 2 0 .6.1 1 .4 1.4.3.4.6.7 1 .9l1.2.6c.4.2.7.4 1 .6s.4.5.4.8c.1.6-.3 1-1.1 1" class="st0"/><path d="M0 38.2h49V0H0v38.2zm47.2-1.7H1.8V20h45.4v16.5zm0-18.3H1.8V1.8h45.4v16.4z" class="st0"/></svg>
+    </a>
+    
+        <a href="#" class="box">
+   <svg xmlns="http://www.w3.org/2000/svg" class="box__image" viewBox="0 0 324.3 61"><path d="M113.5 46.9c0 5.3 1.3 6.5 1.3 8.5 0 2.8-2.7 4.8-5.7 4.8-5.4 0-7.2-3.4-7.4-7.3-4.9 5.4-10.6 7.3-17.2 7.3-7.2 0-14.2-4.9-14.2-12.8 0-10.4 7.9-13.4 17.6-14.5l7.7-.9c3-.3 5.4-1 5.4-4.7 0-3.6-3.7-5.2-7.9-5.2-9.3 0-9.6 6.9-14.6 6.9-3.2 0-5.3-2.2-5.3-4.8 0-5 7.1-11.4 20-11.4 12.1 0 20.4 3.9 20.4 12.9l-.1 21.2zm-12.6-9c-1.4 1.3-4 1.7-5.4 2l-4.6.7c-5.3.8-8.1 2.4-8.1 6.2 0 2.8 2.7 5.2 7 5.2 6.9 0 11.1-4.5 11.1-9.1v-5zM121.7 19.1c0-3.8 2.2-6.3 5.9-6.3s5.9 2.5 5.9 6.3v1.6h.2c3.3-5 8.8-7.9 15.2-7.9 4.3 0 9.7 2 12.1 7.9 3.5-4.9 8-7.9 14.8-7.9 8.7 0 15.7 4 15.7 15.3v25.8c0 3.4-1.4 6.3-6.3 6.3s-6.3-2.9-6.3-6.3V31.3c0-4.5-2-8.1-6.9-8.1-4.8 0-9.1 3.9-9.1 9.7v21c0 3.4-1.4 6.3-6.3 6.3s-6.3-2.9-6.3-6.3V31.3c0-4.5-2-8.1-6.9-8.1-4.8 0-9.1 3.9-9.1 9.7v21c0 3.4-1.4 6.3-6.3 6.3s-6.3-2.9-6.3-6.3V19.1zM198.9 19.1c0-3.8 1.7-6.3 5.7-6.3s5.7 2.5 5.7 6.3v1.6h.2c3.5-4.7 8.1-7.9 15.3-7.9 7.6 0 15.9 3.8 15.9 16.6v24.5c0 3.4-1.4 6.3-6.3 6.3s-6.3-2.9-6.3-6.3v-22c0-5.1-2.5-8.7-7.9-8.7-4.4 0-9.6 3.6-9.6 9.9v20.8c0 3.4-1.4 6.3-6.3 6.3s-6.3-2.9-6.3-6.3l-.1-34.8zM259.6 38.9c0 6.6 4.3 11.5 11.6 11.5 9.5 0 9.5-6.2 14.6-6.2 3 0 5.2 2.6 5.2 4.9 0 7.6-12.2 11.1-19.7 11.1-17.6 0-24.2-11.9-24.2-22.8 0-14.7 8.9-24.5 23.8-24.5 14.5 0 22.8 10.3 22.8 20.6 0 4.3-1.3 5.4-5.5 5.4h-28.6zm22-7.3c-.7-5.8-5-10-10.6-10-6.3 0-10.1 3.9-11.5 10h22.1zM302.2 22.2H300c-3.5 0-5-1.4-5-4.1 0-2.8 1.5-4.1 5-4.1h2.2V6.3c0-4.1 2.5-6.3 6.3-6.3s6.3 2.2 6.3 6.3V14h3.8c3.7 0 5.7 1.1 5.7 4.1s-2 4.1-5.7 4.1h-3.8v25.2c0 1.9 1 2.9 3.3 2.9h1.8c2.8 0 4.4 1.6 4.4 4.2 0 3.6-3.1 5.6-9.1 5.6-9.1 0-12.9-3.8-12.9-11.2l-.1-26.7zM28.4 61c13.2 0 24.3-9.1 27.5-21.3l-43 16.6c4.5 3 9.8 4.7 15.5 4.7M2.1 21.8C.7 25.1 0 28.7 0 32.5c0 3.7.7 7.2 2 10.5l29.4-10.5L2.1 21.8zM28.4 4.1c-5.6 0-10.8 1.6-15.3 4.5L55.9 25C52.5 12.9 41.5 4.1 28.4 4.1" class="st0"/></svg>
+    </a>
+   
+  </div>
+</div>
 
 <!-- agents section ends -->
 
 <!-- contact section starts  -->
 
 <section class="contact" id="contact">
+<h1 >Talk to realEstate agent</h1>
+<p>Start your search with an expert local agent - there’s no pressure or obligation.</p>
 
-<h1 class="heading"> <span>contact</span> us </h1>
-
-<div class="icons-container">
-
-    <div class="icons">
-        <img src="images/icon-1.png" alt="">
-        <h3>phone number</h3>
-        <p>+617-456-7890</p>
-        <p>+617-282-3540</p>
-    </div>
-
-    <div class="icons">
-        <img src="images/icon-2.png" alt="">
-        <h3>email address</h3>
-        <p>realEstate@gmail.com</p>
-        <p>JordanPeterson@gmail.com</p>
-    </div>
-
-     <div class="icons">
-        <img src="images/icon-3.png" alt="">
-        <h3>office address</h3>
-        <p>(617) 326-6661
-            39 Norwell St
-            Boston, Massachusetts(MA), 02121</p>
-    </div>
-
-</div>
 
 <div class="row">
 
@@ -472,13 +175,15 @@
         </div>
         <div class="inputBox">
             <input type="email" placeholder="email">
-            <input type="text" placeholder="subject">
         </div>
+        <div class="inputBox">
         <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="send message" class="btn">
+        <button id="contact-btn">Submit</button>
+        
+    </div>
     </form>
 
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1626697480414!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+    <iframe class="map" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
 
 </div>
 
@@ -488,45 +193,6 @@
 
 <!-- footer section starts  -->
 
-<section class="footer">
-
-    <div class="footer-container">
-
-        <div class="box-container">
-
-        
-            
-
-            <div class="wrapper">
-                <div class="icon facebook">
-                    <div class="tooltip">Facebook</div>
-                    <span><i class="fab fa-facebook"></i></span>
-                </div>
-                <div class="icon twitter">
-                    <div class="tooltip">Twitter</div>
-                    <span><i class="fab fa-twitter"></i></span>
-                </div>
-                <div class="icon heart">
-                    <div class="tooltip">Account</div>
-                    <span><i class="fa fa-user"></i></span>
-                </div>
-                <div class="icon instagram">
-                    <div class="tooltip">Instagram</div>
-                    <span><i class="fab fa-instagram"></i></span>
-                </div>
-                <div class="icon youtube">
-                    <div class="tooltip">YouTube</div>
-                    <span><i class="fab fa-youtube"></i></span>
-                </div>
-            </div> 
-
-        </div>
-
-
-    </div>
-
-</section>
-
 <!-- footer section ends -->
 
 
@@ -534,9 +200,10 @@
 
 
 
-    </section>
+    
     <!-- main section end.-->
 
-    <script src="./index.js"></script>
+    <script src="./script/main.js"></script>
+    <
 </body>
 </html>

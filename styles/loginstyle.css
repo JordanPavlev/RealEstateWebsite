@@ -1,3 +1,7 @@
+:root {
+    --blue: #1E90FF;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -12,24 +16,23 @@ body{
 
 /*Start Forms*/
 
-
+.row{
+    display: flex;
+    border: 1px dotted var(--blue);
+    gap: 7.4rem;
+}
 .forms{
     background: #fff;
     padding: 20px;
-    
     margin: 100px auto;
     color: #b7afaf;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, .7);
 }
 .forms form{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    
+    width: 100%;
 }
 .forms .form-login,
 .forms .form-signup{
-    position: relative;
     padding: 30px;
     
     color: #b7afaf;
@@ -47,10 +50,8 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .forms .title-form{
-     color: #c60820;
-    font-size: 57px;
-    margin-top: 0;
-    margin-bottom: 50px;
+     color: var(--blue);
+    font-size: 4rem;
 }
 .forms .input-container{
     position: relative;
@@ -58,7 +59,7 @@ body{
 }
 
 .forms .input-container input{
-  width: 100%;
+  width: 12rem;
   display: block;
   padding: 10px;
  border: 1px solid #CCC;
@@ -66,15 +67,15 @@ body{
 .forms .input-container input:focus{
     outline: none;
     box-shadow: none;
-    border-bottom: solid 2px #c60820 !important;
-  border-left: solid 4px #c60820 !important;
+    border-bottom: solid 2px var(--blue) !important;
+  border-left: solid 4px var(--blue) !important;
 }
 .forms .input-container label{
     position: absolute;
     top: 10px;
     left: 10px;
-    color: #c60820;
-    opacity: 0
+    color: var(--blue);
+    opacity: 0;
 }
 .forms .input-container input:focus ~ label{
     -webkit-transition: all .5s ease-in-out;
@@ -85,33 +86,37 @@ body{
      top: -22px;
 }
 .forms input[type="submit"]{
-    background-color: #c60820;
+    background-color: var(--blue);
     color: #fff;
     padding: 12px 15px;
     margin-bottom: 30px;
-    border-radius: 2px;
+    border-radius: 5px;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
 }
 .forms input[type="submit"]:hover{
-    background-color: #c60820;
+    background-color: var(--blue);
 }
 .forms .footer-form label{
     font-weight: normal;
-    cursor: pointer
+    cursor: pointer;
 }
-.forms .footer-form a{
+.pull-right{
     color: #b7afaf
 }
+.pull-right:hover{
+    color: var(--blue);
+}
+
 
 .forms input[type="checkbox"]{
-    display: none
+    display: none;
 }
 .forms input[type="checkbox"] + label:before{
     background-color: #fff;
-    border: 2px solid #c60820;
+    border: 2px solid var(--blue);
     content: "";
     display: inline-block;
    width: 16px;
@@ -121,7 +126,7 @@ body{
     vertical-align: middle;
 }
 .forms input[type="checkbox"]:checked + label:before{
-    background-color: #c60820; 
+    background-color: var(); 
 }
 /*Start Media Max Width 991px*/
 @media (max-width: 991px){
@@ -136,4 +141,17 @@ body{
     border-bottom: 2px solid #f7f7f7;
     padding-bottom: 50px;
   }
+}
+
+.img-container {
+    border: 1px dotted var(--blue);
+    width: 25rem;
+    margin: 12px;
+    padding: 8px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    
 }
